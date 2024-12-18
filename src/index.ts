@@ -14,12 +14,23 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+const corsOptions = {
+    // origin: 'http://localhost:5173',
+    origin:true,
+    credentials: true
+}
+
+app.use(cors(corsOptions));
 
 // Routes
 app.use('/api/universities', universityRoutes);
 app.use('/api/banks', bankRoutes);
 app.use('/api/students', studentRoutes);
+
+// Default Route
+app.get('/', function (req, res) {
+    res.send("<h1>Server Working</h1>")
+});
 
 // Server
 const PORT = process.env.PORT || 5000;
