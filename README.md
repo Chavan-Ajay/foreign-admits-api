@@ -5,7 +5,7 @@ A backend service for a Foreign Admits financial services platform where student
 ## Base URL
 
 ```
-https://foreign-admits-api.onrender.com/
+https://foreign-admits-api.onrender.com
 ```
 
 ## Tech Stack
