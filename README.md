@@ -1,6 +1,6 @@
 # Foreign Admits API
 
-A backend service for a Foreign Admits financial services platform where students can apply for loans at multiple universities and choose multiple banks for each university.
+A backend service for a study-abroad financial services platform where students can apply for loans at multiple universities and choose multiple banks for each university.
 
 ## Base URL
 
